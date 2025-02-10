@@ -1,0 +1,41 @@
+база данных прав
+CREATE TABLE prava
+(
+id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+tlg INTEGER,
+admin INTEGER
+);
+
+CREATE TABLE md5_log
+(
+id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+datee TEXT,
+timee TEXT,
+name_file TEXT,
+from_id TEXT,
+md5 TEXT NOT NULL
+);
+
+
+база данных токена
+CREATE TABLE key
+(
+id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+key TEXT NOT NULL
+);
+
+CREATE TABLE filez
+(
+id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+name_file TEXT,
+md5 TEXT,
+doc_name TEXT,
+name TEXT,
+descript TEXT,
+coord TEXT,
+dolg TEXT,
+shir TEXT,
+whenn TEXT,
+date_ins TEXT,
+from_id
+);
